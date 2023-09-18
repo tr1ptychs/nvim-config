@@ -1,0 +1,2 @@
+require("tripty")
+print("hello")
