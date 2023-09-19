@@ -6,7 +6,7 @@ lsp.ensure_installed({
   'clangd',
   'pyre',
   'jdtls',
-  'csharp_ls'
+  'omnisharp'
 })
 
 -- Fix Undefined global 'vim'
