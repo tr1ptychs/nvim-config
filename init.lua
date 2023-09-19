@@ -1,2 +1,1 @@
 require("tripty")
-print("hello")
