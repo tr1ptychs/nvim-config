@@ -6,7 +6,12 @@ lsp.ensure_installed({
   'clangd',
   'pyre',
   'jdtls',
-  'omnisharp'
+  'omnisharp',
+  'html',
+  'cssls',
+  'lua_ls',
+  'javascript'
+
 })
 
 -- Fix Undefined global 'vim'
