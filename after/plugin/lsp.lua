@@ -3,15 +3,11 @@ local lsp = require("lsp-zero")
 lsp.preset("recommended")
 
 lsp.ensure_installed({
-  'clangd',
-  'pyre',
-  'jdtls',
-  'omnisharp',
-  'html',
-  'cssls',
-  'lua_ls',
-  'javascript'
-
+    'clangd',
+    'pyre',
+    'jdtls',
+    'omnisharp',
+    'lua_ls',
 })
 
 -- Fix Undefined global 'vim'
