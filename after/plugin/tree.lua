@@ -138,7 +138,7 @@ require("nvim-tree").setup({
 		-- width of the window, can be either a number (columns) or a string in `%`
 		width = 40,
 		-- side of the tree, can be one of 'left' | 'right' | 'top' | 'bottom'
-		side = "left",
+		side = "right",
 		number = false,
 		relativenumber = false,
 	},
