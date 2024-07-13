@@ -9,9 +9,9 @@ vim.keymap.set('n', '<leader>tc', '<cmd>BufferClose!<CR>')
 -- change focus to file explorer
 vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeFocus<CR>")
 
--- move selected lines up and down
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+-- move selected lines up and down, obsolute from minimove
+--vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+--vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- append next line to current while maintiaining cursor placement
 vim.keymap.set("n", "J", "mzJ`z")

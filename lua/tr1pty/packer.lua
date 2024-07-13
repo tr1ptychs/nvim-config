@@ -36,10 +36,6 @@ return require('packer').startup(function(use)
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v3.x',
         requires = {
-            --- Uncomment the two plugins below if you want to manage the language servers from neovim
-            { 'williamboman/mason.nvim' },
-            -- {'williamboman/mason-lspconfig.nvim'},
-
             { 'neovim/nvim-lspconfig' },
             { 'hrsh7th/nvim-cmp' },
             { 'hrsh7th/cmp-nvim-lsp' },
@@ -55,4 +51,5 @@ return require('packer').startup(function(use)
     use('nvim-tree/nvim-web-devicons') -- OPTIONAL: for file icons
     use('lewis6991/gitsigns.nvim')   -- OPTIONAL: for git status
     use('romgrk/barbar.nvim')
+    use('echasnovski/mini.move')
 end)
