@@ -1,4 +1,4 @@
-require("tr1pty.set")
-require("tr1pty.remap")
-require("tr1pty.autocmd")
-
+require("config.lazy")
+require("config.remap")
+require("config.set")
+require("config.autocmd")
