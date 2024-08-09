@@ -44,7 +44,7 @@ return {
           },
         },
       }
-      vim.keymap.set('n', '<leader>db', '<Cmd>Dashboard<Cr>')
+      vim.keymap.set('n', '<leader>db', '<Cmd>Dashboard<Cr>', { noremap = true, silent = true })
     end,
   }
 }
