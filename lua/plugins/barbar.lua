@@ -1,6 +1,10 @@
 return {
   "romgrk/barbar.nvim",
 
+  dependencies = {
+    'lewis6991/gitsigns.nvim',
+    'nvim-tree/nvim-web-devicons',
+  },
   config = function()
     local map = vim.api.nvim_set_keymap
     local opts = { noremap = true, silent = true }
@@ -50,7 +54,7 @@ return {
     -- Set barbar's options
     require("barbar").setup({
       -- Excludes buffers from the tabline
-      exclude_ft = { "qf" },
+      exclude_ft = { "qf", "git", "fugitive" },
       icons = {
         buffer_index = true,
         buffer_number = false,
@@ -62,12 +66,6 @@ return {
           [vim.diagnostic.severity.INFO] = { enabled = false },
           [vim.diagnostic.severity.HINT] = { enabled = false },
         },
-        gitsigns = {
-          added = { enabled = false, icon = "+" },
-          changed = { enabled = false, icon = "~" },
-          deleted = { enabled = false, icon = "-" },
-        },
-        separator = { left = "▎", right = "" },
         modified = { button = "●" },
         pinned = { button = "󰐃", filename = true, separator = { right = "" } },
         alternate = { filetype = { enabled = false } },
@@ -77,10 +75,8 @@ return {
       },
       -- Set the filetypes which barbar will offset itself for
       sidebar_filetypes = {
-        -- Use the default values: {event = 'BufWinLeave', text = nil}
-        NvimTree = { text = "File Explorer" },
-        -- Or, specify the text used for the offset:
-        undotree = { text = "undotree" },
+        NvimTree = { text = "File Explorer", align = "center" },
+        undotree = { text = "undotree", align = "center" },
         -- Or, specify the event which the sidebar executes when leaving:
         -- ["neo-tree"] = { event = "BufWipeout" },
         -- Or, specify both
