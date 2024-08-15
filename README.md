@@ -2,4 +2,4 @@
 
 Always a WIP
 
-Probably don't just clone this, instead use something like [kickstart](https://github.com/nvim-lua/kickstart.nvim) and customize for yourself.
+You probably shouldn't just clone/fork this, but feel free to do so.
