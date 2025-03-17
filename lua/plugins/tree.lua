@@ -3,6 +3,7 @@ return {
 
   dependencies = {
     "nvim-tree/nvim-web-devicons",
+    "lewis6991/gitsigns.nvim"
   },
 
   config = function()
