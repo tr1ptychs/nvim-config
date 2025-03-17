@@ -3,7 +3,6 @@ return {
 
   dependencies = {
     "nvim-tree/nvim-web-devicons",
-    "lewis6991/gitsigns.nvim",
   },
 
   config = function()
@@ -46,7 +45,7 @@ return {
       },
       view = {
         -- width of the window, can be either a number (columns) or a string in `%`
-        width = 40,
+        width = 30,
         -- side of the tree, can be one of 'left' | 'right' | 'top' | 'bottom'
         side = "right",
         number = false,
