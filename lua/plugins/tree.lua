@@ -46,7 +46,7 @@ return {
       },
       view = {
         -- width of the window, can be either a number (columns) or a string in `%`
-        width = 30,
+        width = 40,
         -- side of the tree, can be one of 'left' | 'right' | 'top' | 'bottom'
         side = "right",
         number = false,

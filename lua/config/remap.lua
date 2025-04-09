@@ -66,5 +66,9 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 -- start replacing current word
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
+-- search and replace visual mode selection
+vim.keymap.set("v", "<leader>s",
+  [[y:<C-U>%s/<C-r>=escape(@", '/\\')<CR>/<C-r>=escape(@", '/\\')<CR>/gI<Left><Left><Left>]])
+
 -- make current file x-ecutable
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
